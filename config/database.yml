@@ -14,7 +14,7 @@ default: &default
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password: 
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
@@ -53,5 +53,5 @@ production:
   <<: *default
   database: raisetech_live8_sample_app_production
   username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  password: Mappiinex210
   host: /var/lib/mysql/mysql.sock
