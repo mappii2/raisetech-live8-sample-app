@@ -53,5 +53,5 @@ production:
   <<: *default
   database: raisetech_live8_sample_app_production
   username: root
-  password: Mappiinex210
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   host: /var/lib/mysql/mysql.sock
