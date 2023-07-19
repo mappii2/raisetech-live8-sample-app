@@ -15,7 +15,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'ranked-model'
 gem 'slim-rails'
 gem 'msgpack', '~> 1.4', '>= 1.4.2'
-gem "aws-sdk-s3", require: false
+gem "aws-sdk-s3", '1.130.0'
 gem 'image_processing', '~> 1.2'
 gem 'net-smtp'
 gem 'jsbundling-rails'
